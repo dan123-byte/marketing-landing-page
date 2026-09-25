@@ -1,6 +1,8 @@
 # GrowthSpur Landing Page
 - A fast, responsive, and data-driven lead-generation landing page built with vanilla HTML5, CSS3, and JavaScript.
 
+🌐 **Live Demo: https://dan123-byte.github.io/marketing-landing-page/ **
+
 ## What the Website Does
 - Captures Business Leads: Collects user information (Name, Work Email, Company, Phone, and Message) through an interactive contact form.
 
