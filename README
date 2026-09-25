@@ -1,7 +1,7 @@
-GrowthSpur Landing Page
+# GrowthSpur Landing Page
 - A fast, responsive, and data-driven lead-generation landing page built with vanilla HTML5, CSS3, and JavaScript.
 
-What the Website Does
+## What the Website Does
 - Captures Business Leads: Collects user information (Name, Work Email, Company, Phone, and Message) through an interactive contact form.
 
 - Validates User Input: Checks that all required fields are filled out and that email and phone numbers are correctly formatted before allowing submission.
@@ -14,7 +14,7 @@ What the Website Does
 
 - Handles Errors Gracefully: Displays dynamic success messages when a submission succeeds or clear error alerts if the request fails, allowing users to retry.
 
-Tech Stack
+## Tech Stack
 - HTML5: Semantic layout structure (Header, Hero, Services, Testimonials, Form, Footer).
 
 - CSS3: Custom responsive layout, modern typography, component styling, and mobile optimization.
