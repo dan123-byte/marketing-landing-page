@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    color: #292524;
     background: #fff;
     line-height: 1.6;
 }
@@ -32,12 +32,12 @@ textarea {
 
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
 .section {
-    padding: 70px 0;
+    padding: 90px 0;
 }
 
 
@@ -49,59 +49,69 @@ textarea {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: #fff;
-    border-bottom: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #f1f1f1;
+    backdrop-filter: blur(10px);
 }
 
 .navbar {
-    min-height: 70px;
+    min-height: 74px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #222;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #1c1917;
 }
 
 .logo span {
-    color: #635bff;
+    color: #f97316;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
     list-style: none;
 }
 
 .nav-links a {
-    color: #444;
-    font-size: 15px;
+    position: relative;
+    color: #57534e;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #635bff;
+    color: #f97316;
 }
 
 .nav-cta {
-    padding: 9px 17px;
+    padding: 10px 18px;
     color: #fff !important;
-    background: #635bff;
-    border-radius: 6px;
+    background: #f97316;
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
 }
 
 .nav-cta:hover {
-    background: #5148e5;
+    background: #ea580c !important;
+    transform: translateY(-1px);
 }
 
 .mobile-menu {
     display: none;
+    padding: 6px;
     border: none;
-    background: none;
-    font-size: 24px;
+    background: transparent;
+    color: #292524;
+    font-size: 27px;
+    line-height: 1;
     cursor: pointer;
 }
 
@@ -111,43 +121,52 @@ textarea {
 ========================= */
 
 .hero {
-    padding: 100px 0;
-    background: #f7f7ff;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 105px;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(249, 115, 22, 0.12), transparent 28%),
+        radial-gradient(circle at 10% 90%, rgba(251, 146, 60, 0.08), transparent 25%),
+        #fffaf5;
 }
 
 .hero-content {
-    max-width: 750px;
+    max-width: 790px;
     margin: 0 auto;
     text-align: center;
 }
 
 .hero-badge {
     display: inline-block;
-    margin-bottom: 20px;
-    padding: 6px 12px;
-    color: #635bff;
-    background: #eae8ff;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
+    margin-bottom: 22px;
+    padding: 7px 14px;
+    color: #c2410c;
+    background: #ffedd5;
+    border: 1px solid #fed7aa;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .hero h1 {
-    margin-bottom: 20px;
-    color: #222;
-    font-size: clamp(40px, 7vw, 64px);
-    line-height: 1.1;
+    margin-bottom: 22px;
+    color: #1c1917;
+    font-size: clamp(42px, 7vw, 68px);
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    line-height: 1.05;
 }
 
 .hero h1 span {
-    color: #635bff;
+    color: #f97316;
 }
 
 .hero-description {
-    max-width: 650px;
-    margin: 0 auto 30px;
-    color: #666;
+    max-width: 680px;
+    margin: 0 auto 34px;
+    color: #78716c;
     font-size: 18px;
+    line-height: 1.7;
 }
 
 .hero-actions {
@@ -159,12 +178,12 @@ textarea {
 
 .btn {
     display: inline-block;
-    padding: 12px 22px;
+    padding: 13px 23px;
     border: none;
-    border-radius: 6px;
-    font-weight: 600;
+    border-radius: 7px;
+    font-weight: 700;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
@@ -173,44 +192,47 @@ textarea {
 
 .btn-primary {
     color: #fff;
-    background: #635bff;
+    background: #f97316;
+    box-shadow: 0 7px 18px rgba(249, 115, 22, 0.22);
 }
 
 .btn-primary:hover {
-    background: #5148e5;
+    background: #ea580c;
+    box-shadow: 0 9px 22px rgba(249, 115, 22, 0.28);
 }
 
 .btn-secondary {
-    color: #333;
+    color: #44403c;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #e7e5e4;
 }
 
 .btn-secondary:hover {
-    background: #f5f5f5;
+    background: #fafaf9;
+    border-color: #d6d3d1;
 }
 
 .hero-proof {
-    margin-top: 50px;
-    color: #777;
+    margin-top: 55px;
+    color: #78716c;
     font-size: 14px;
 }
 
 .proof-numbers {
     display: flex;
     justify-content: center;
-    gap: 60px;
-    margin-top: 15px;
+    gap: 75px;
+    margin-top: 17px;
 }
 
 .proof-number strong {
     display: block;
-    color: #222;
-    font-size: 24px;
+    color: #1c1917;
+    font-size: 25px;
 }
 
 .proof-number span {
-    color: #777;
+    color: #78716c;
 }
 
 
@@ -219,29 +241,33 @@ textarea {
 ========================= */
 
 .section-header {
-    max-width: 650px;
-    margin: 0 auto 45px;
+    max-width: 680px;
+    margin: 0 auto 50px;
     text-align: center;
 }
 
 .section-label {
     display: inline-block;
-    margin-bottom: 10px;
-    color: #635bff;
-    font-size: 13px;
-    font-weight: 700;
+    margin-bottom: 11px;
+    color: #ea580c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
 }
 
 .section-title {
-    margin-bottom: 15px;
-    color: #222;
-    font-size: 36px;
-    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #1c1917;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.15;
 }
 
 .section-description {
-    color: #777;
+    color: #78716c;
+    font-size: 16px;
 }
 
 
@@ -252,44 +278,48 @@ textarea {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 22px;
 }
 
 .service-card {
-    padding: 25px;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #eee7e1;
+    border-radius: 12px;
     background: #fff;
+    transition: all 0.25s ease;
 }
 
 .service-card:hover {
-    border-color: #cfcaff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border-color: #fed7aa;
+    box-shadow: 0 15px 35px rgba(41, 37, 36, 0.07);
+    transform: translateY(-4px);
 }
 
 .service-icon {
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 18px;
-    color: #635bff;
-    background: #eeecff;
-    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #ea580c;
+    background: #fff1e6;
+    border: 1px solid #fed7aa;
+    border-radius: 9px;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .service-card h3 {
-    margin-bottom: 8px;
-    color: #222;
+    margin-bottom: 9px;
+    color: #292524;
     font-size: 18px;
 }
 
 .service-card p {
-    color: #777;
+    color: #78716c;
     font-size: 14px;
+    line-height: 1.7;
 }
 
 
@@ -298,62 +328,64 @@ textarea {
 ========================= */
 
 .social-proof {
-    background: #f8f8f8;
+    background: #fafaf9;
 }
 
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 22px;
 }
 
 .testimonial {
-    padding: 25px;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
+    padding: 28px;
+    border: 1px solid #e7e5e4;
+    border-radius: 12px;
     background: #fff;
 }
 
 .stars {
-    margin-bottom: 15px;
-    color: #f5a623;
+    margin-bottom: 16px;
+    color: #f97316;
     letter-spacing: 2px;
 }
 
 .testimonial blockquote {
-    margin-bottom: 20px;
-    color: #444;
+    margin-bottom: 22px;
+    color: #57534e;
     font-size: 15px;
+    line-height: 1.7;
 }
 
 .testimonial-author {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: #fff;
-    background: #635bff;
+    background: #f97316;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .author-name {
     display: block;
-    color: #222;
+    color: #292524;
     font-size: 14px;
+    font-weight: 700;
 }
 
 .author-role {
     display: block;
-    color: #888;
+    color: #a8a29e;
     font-size: 12px;
 }
 
@@ -365,74 +397,77 @@ textarea {
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 22px;
 }
 
 .pricing-card {
     position: relative;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    padding: 32px;
+    border: 1px solid #e7e5e4;
+    border-radius: 12px;
     background: #fff;
 }
 
 .pricing-card.featured {
-    border: 2px solid #635bff;
+    border: 2px solid #f97316;
+    box-shadow: 0 15px 35px rgba(249, 115, 22, 0.1);
 }
 
 .popular {
     position: absolute;
-    top: -13px;
+    top: -14px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 4px 12px;
-    border-radius: 20px;
+    padding: 5px 14px;
+    border-radius: 999px;
     color: #fff;
-    background: #635bff;
-    font-size: 12px;
-    font-weight: 700;
+    background: #f97316;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 .pricing-card h3 {
-    color: #222;
+    color: #292524;
     font-size: 20px;
 }
 
 .price {
     margin: 15px 0;
-    color: #222;
-    font-size: 34px;
-    font-weight: 700;
+    color: #1c1917;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
 .price span {
-    color: #777;
+    color: #78716c;
     font-size: 13px;
     font-weight: 400;
 }
 
 .pricing-description {
-    margin-bottom: 20px;
-    color: #777;
+    margin-bottom: 22px;
+    color: #78716c;
     font-size: 14px;
 }
 
 .features {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     list-style: none;
 }
 
 .features li {
-    margin-bottom: 10px;
-    color: #555;
+    margin-bottom: 11px;
+    color: #57534e;
     font-size: 14px;
 }
 
 .features li::before {
     content: "✓";
-    margin-right: 8px;
-    color: #16a34a;
-    font-weight: bold;
+    margin-right: 9px;
+    color: #ea580c;
+    font-weight: 800;
 }
 
 .pricing-card .btn {
@@ -446,26 +481,28 @@ textarea {
 ========================= */
 
 .contact {
-    background: #f7f7ff;
+    background: #fff7ed;
 }
 
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 70px;
     align-items: center;
 }
 
 .contact-copy h2 {
-    margin-bottom: 15px;
-    color: #222;
-    font-size: 38px;
-    line-height: 1.2;
+    margin-bottom: 17px;
+    color: #1c1917;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.15;
 }
 
 .contact-copy p {
-    margin-bottom: 20px;
-    color: #777;
+    margin-bottom: 22px;
+    color: #78716c;
 }
 
 .contact-benefits {
@@ -473,15 +510,15 @@ textarea {
 }
 
 .contact-benefits li {
-    margin-bottom: 10px;
-    color: #555;
+    margin-bottom: 11px;
+    color: #57534e;
 }
 
 .contact-benefits li::before {
     content: "✓";
-    margin-right: 8px;
-    color: #16a34a;
-    font-weight: bold;
+    margin-right: 9px;
+    color: #ea580c;
+    font-weight: 800;
 }
 
 
@@ -490,10 +527,11 @@ textarea {
 ========================= */
 
 .lead-form {
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    padding: 32px;
+    border: 1px solid #fed7aa;
+    border-radius: 13px;
     background: #fff;
+    box-shadow: 0 15px 40px rgba(41, 37, 36, 0.07);
 }
 
 .form-group {
@@ -502,28 +540,31 @@ textarea {
 
 .form-group label {
     display: block;
-    margin-bottom: 6px;
-    color: #333;
-    font-size: 14px;
-    font-weight: 600;
+    margin-bottom: 7px;
+    color: #44403c;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 11px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    padding: 12px 13px;
+    border: 1px solid #d6d3d1;
+    border-radius: 7px;
     outline: none;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #635bff;
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
 }
 
 .form-group textarea {
-    min-height: 100px;
+    min-height: 110px;
     resize: vertical;
 }
 
@@ -538,8 +579,8 @@ textarea {
 .form-status {
     display: none;
     margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 11px;
+    border-radius: 7px;
     font-size: 14px;
 }
 
@@ -561,16 +602,16 @@ textarea {
 ========================= */
 
 .footer {
-    padding: 45px 0 20px;
-    color: #aaa;
-    background: #181818;
+    padding: 50px 0 22px;
+    color: #a8a29e;
+    background: #1c1917;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 30px;
-    padding-bottom: 30px;
+    gap: 35px;
+    padding-bottom: 35px;
 }
 
 .footer-brand .logo {
@@ -579,12 +620,13 @@ textarea {
 
 .footer-brand p {
     max-width: 300px;
-    margin-top: 10px;
+    margin-top: 11px;
+    color: #a8a29e;
     font-size: 14px;
 }
 
 .footer-column h3 {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     color: #fff;
     font-size: 14px;
 }
@@ -594,18 +636,24 @@ textarea {
 }
 
 .footer-column li {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     font-size: 13px;
 }
 
+.footer-column a {
+    color: #a8a29e;
+    transition: color 0.2s ease;
+}
+
 .footer-column a:hover {
-    color: #fff;
+    color: #fb923c;
 }
 
 .footer-bottom {
-    padding-top: 20px;
-    border-top: 1px solid #333;
+    padding-top: 22px;
+    border-top: 1px solid #292524;
     text-align: center;
+    color: #78716c;
     font-size: 12px;
 }
 
@@ -622,19 +670,35 @@ textarea {
 
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 74px;
         left: 0;
         right: 0;
         display: none;
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 5%;
         background: #fff;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #eee7e1;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 5px;
+    }
+
+    .nav-cta {
+        margin: 5px 0 10px;
+        text-align: center;
     }
 
     .services-grid,
@@ -664,15 +728,20 @@ textarea {
     }
 
     .section {
-        padding: 55px 0;
+        padding: 65px 0;
+    }
+
+    .navbar {
+        min-height: 68px;
     }
 
     .hero {
-        padding: 70px 0;
+        padding: 80px 0 70px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 42px;
+        letter-spacing: -1.5px;
     }
 
     .hero-description {
@@ -694,7 +763,7 @@ textarea {
     }
 
     .section-title {
-        font-size: 30px;
+        font-size: 31px;
     }
 
     .services-grid,
@@ -703,8 +772,14 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+    .service-card,
+    .testimonial,
+    .pricing-card {
+        padding: 25px;
+    }
+
     .contact-copy h2 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .lead-form {
